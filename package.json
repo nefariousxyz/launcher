@@ -1,0 +1,39 @@
+{
+    "name": "paradox-v3-launcher",
+    "version": "1.0.9",
+    "description": "A minimal Paradox Launcher V3",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron .",
+      "pack": "electron-builder --dir",
+      "dist": "electron-builder"
+    },
+    "repository": "",
+    "keywords": [
+      "Paradox",
+      "v3",
+      "prx",
+      "legacy",
+      "prx"
+    ],
+    "author": "Franz Abiva",
+    "license": "CC0-1.0",
+    "devDependencies": {
+      "electron": "^9.0.4",
+      "electron-builder": "^22.7.0",
+      "node-require": "0.0.10"
+    },
+    "dependencies": {
+      "custom-electron-titlebar": "^3.2.2-hotfix62",
+      "fivem": "^2.0.4",
+      "update-electron-app": "^2.0.1"
+    },
+    "build": {
+      "appId": "com.paradoxthree.ParadoxV3",
+      "win": {
+        "target": "nsis",
+        "icon": "build/icon.ico"
+      }
+    }
+  }
+  

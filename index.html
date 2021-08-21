@@ -1,0 +1,570 @@
+<!doctype html>
+<!--
+COPYRIGHT by HighHay/Mivfx
+Before using this theme, you should accept themeforest licenses terms.
+http://themeforest.net/licenses
+-->
+
+<html class="no-js" lang="en">
+
+
+<!-- Mirrored from demo.highhay.com/creation/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Jun 2020 08:15:09 GMT -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	
+
+	<!-- Page Title Here -->
+	<title>Paradox RP Launcher | V1.0.8</title>
+
+	<!-- Page Description Here -->
+	<meta name="description" content="Paradox RP Philippines V3">
+
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+	<!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+	<!-- Initializer -->
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<!-- Web fonts and Web Icons -->
+	<link rel="stylesheet" href="fonts/opensans/stylesheet.css">
+	<link rel="stylesheet" href="fonts/glacial/stylesheet.css">
+	<link rel="stylesheet" href="fonts/linearicons/stylesheet.css">
+	<link rel="stylesheet" href="fonts/ionicons.min.css">
+
+	<!-- Vendor CSS style -->
+	<link rel="stylesheet" href="css/pageloader.css">
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<link rel="stylesheet" href="js/vendor/jquery.fullPage.css">
+	<link rel="stylesheet" href="js/vegas/vegas.min.css">
+	<link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
+
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="stylez.css">
+	<!-- alt layout -->
+<!--	<link rel="stylesheet" href="./css/style-color1.css">-->
+	<!-- responsiveness -->
+	<link rel="stylesheet" href="css/main_responsive.css">
+
+	<script src="js/vendor/modernizr-2.7.1.min.js"></script>
+	
+	<script>
+        if (typeof module === 'object') {
+            window.module == module;
+            module = undefined;
+        }
+    </script>
+
+ 	<script src="./jquery.js"></script>
+    <script src="./app_connection.js"></script>
+	
+	<script>if (window.module) module = window.module;</script>
+	
+</head>
+
+<body id="menu" class="alt-bg">
+	<script>
+		// 1. Require the installed module
+		const customTitlebar = require('custom-electron-titlebar');
+
+		// 2. Create the custom titlebar with your own settings
+		//    To make it work, we just need to provide the backgroundColor property
+		//    Other properties are optional.
+		let MyTitleBar = new customTitlebar.Titlebar({
+			backgroundColor: customTitlebar.Color.fromHex('#03a9f4'),
+			shadow: true,
+			icon: './icon.svg'
+		});
+		
+		// 3. Update Titlebar text
+		MyTitleBar.updateTitle('Paradox RP PH | Version 1.0.9');
+	</script>
+
+
+	<!-- Page Loader -->
+	<div class="page-loader" id="page-loader">
+		<div><i class="ion ion-load-c ion-spin"></i>
+			<p>Loading Paradox Launcher</p>
+		</div>
+	</div>
+
+	
+
+	<!-- BEGIN OF site header Menu -->
+	<header class="header-top">
+		<div class="logo-wrapper">
+			<h2 class="logo">
+					<img src="img/logo.png" alt="Logo">
+					<span class="title">PARADOX LEGACY V3.1</span>
+				</h2>
+				
+		</div>
+		<a class="menu-icon clearfix">
+			<div class="bars">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+<!--			<div class="txt">Menu</div>-->
+		</a>
+		<!-- Begin of Site primary navigation -->
+		<nav class="site-nav" id="site-nav">
+			<ul class="menu clearfix qmenu">
+				<!--<li class="active" data-menuanchor="home">
+					<a href="#home">Home</a>
+				</li>
+				<li data-menuanchor="about-us">
+					<a href="#about-us">About</a>
+				</li>-->
+				
+				<li data-menuanchor="write-message">
+					
+					<li data-menuanchor="home">
+						
+					</li>
+				
+				</li>
+				<!-- Add other  similar menu here : -->
+				<!--<li>
+						<a href="#write-message">Write to us</a>
+					</li>-->
+
+			</ul>
+		</nav>
+		<!-- End of Site primary navigation -->
+	</header>
+	
+	<!-- END OF site header Menu-->
+
+
+	<!-- BEGIN OF sidebar page navigation -->
+	<nav class="page-nav">
+		<ul id="qmenu" class="qmenu">
+			<li data-menuanchor="home">
+				<a href="#home">
+					<i class="icon lnr lnr-home"></i>
+					<span class="title">Play Paradox V3</span>
+				</a>
+			</li>
+			
+			<li data-menuanchor="updates">
+				<a href="http://paradoxrp.com/" target="_blank">
+					<i class="icon lnr lnr-download"></i>
+					<span class="title">Website</span>
+				</a>
+			</li>
+			<li data-menuanchor="updates">
+				<a href="https://paradoxrp.com/forums/" target="_blank">
+					<i class="icon lnr lnr-download"></i>
+					<span class="title">Forums</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- END OF sidebar page navigation -->
+
+	<!-- BEGIN OF site cover -->
+	<div class="page-cover">
+		<!-- Cover Background -->
+		<!--<div class="cover-bg pos-abs full-size bg-img" data-image-src="img/bg-default.jpg"></div> -->
+
+		<!-- BEGIN OF Slideshow Background -->
+		<!--<div class="cover-bg pos-abs full-size slide-show">
+			<i class='img' data-src='./img/bg-slide1.jpg'></i>
+			<i class='img' data-src='./img/bg-slide2.jpg'></i>
+			<i class='img' data-src='./img/bg-slide3.jpg'></i>
+			<i class='img' data-src='./img/bg-slide4.jpg'></i>
+		</div>-->
+		<!-- END OF Slideshow Background -->
+
+		<!--BEGIN OF Static video bg  - uncomment below to use Video as Background-->
+		<!--<div id="container" class="video-container show-for-medium-up">
+                <video autoplay="autoplay" loop="loop" autobuffer="autobuffer" muted="muted"
+                       width="640" height="360">
+                    <source src="vid/flower_loop.mp4" type="video/mp4">
+                </video>
+            </div>-->
+		<!--END OF Static video bg-->
+
+		<!--BEGIN OF Youtube video bg  - uncomment/comment below to use/or not Youtube Video as Background-->
+		<div class='youtube-container video-container show-for-medium-up'>
+				<iframe id="myPlayer" frameborder="0" src="https://www.youtube.com/embed/u2yoQ4Q8Vzo?autohide=1&showinfo=0&controls=0&autoplay=1&loop=1&mute=1" frameborder="0" allowfullscreen>
+				</iframe>
+			</div>
+		<!--END OF Youtube video bg-->
+
+		<!-- Solid color as background -->
+		<!--            <div class="cover-bg pos-abs full-size bg-color" data-bgcolor="#00B4C2"></div>-->
+
+		<!-- Particles as background -->
+		<!--<div  id="particles-js" class="cover-bg pos-abs full-size bg-color" data-bgcolor="rgba(37, 38, 42, 0.81)"></div>-->
+		
+		<!-- Solid color as filter -->
+		<div class="cover-bg-mask pos-abs full-size bg-color" data-bgcolor="rgba(0, 0, 0, 0.27)"></div>
+		<!-- <div class="cover-bg-mask pos-abs full-size bg-color" data-bgcolor="rgba(45, 46, 51, 0.8)"></div> -->
+
+	</div>
+	<!--END OF site Cover -->
+
+
+
+	<!-- BEGIN OF site main content content here -->
+	<main class="page-main page-home fullpg" id="mainpage">
+		
+		<!-- Begin of home section -->
+		<div class="section section-home" data-section="home">
+
+			<!-- Content -->
+			<section class="content with-clock">
+				<!-- left elements -->
+				<div class="c-left">
+					<div class="">
+						<div class="c-logo home-logo ">
+<!--							<img class="" src="img/logo.png" alt="Logo">-->
+<!--							<i class="icon lnr lnr-clock anim-zoomin"></i>-->
+						</div>
+					</div>
+					<div class="c-clock clock clock-countdown">
+						<div class="site-config"
+							 data-date="01/01/2021 02:00:00" 
+							 data-date-timezone="+0"
+							 ></div>
+						<div class="img-top">
+							<div class="tile-hours anim-zoomin anim-1">
+								<span class="">200</span>
+								<span class="txt">Resources</span>
+							</div>
+						</div>
+						<div class="img-middle bg-img" data-image-src="img/bg-sample1.jpg">
+							<div class="tile-days">
+								<span id="onlines">00</span>
+								<span class="txt">Players Online</span>
+							</div>
+							<div class="tile-minutes anim-zoomin anim-2">
+								<span class="">128</span>
+								<span class="txt">Max Player</span>
+							</div>
+							<div class="tile-seconds anim-zoomin anim-3">
+								<span class="">01</span>
+								<span class="txt">Servers</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- right elements -->
+				<div class="c-right">
+					<div class="anim-slideright">
+						<header class="header">
+							<h2>Paradox <strong>V3</strong></h2>
+							<h3>We are on a Legacy!</h3>
+						</header>
+						<div class="desc">
+									<p>Come and join us, be a part of the community.. 
+										<br>       <b>A Legacy Unfolding!</b></p>
+							</div>
+						<div class="btns">
+							<button type="button" class="button red" id="btn_start">You haven't installed FiveM.</button>
+							<!--<a class="btn" href="https://forums.paradoxrp.com" target="_blank">Visit Forums</a>-->
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Arrows scroll down/up -->
+			<footer class="s-footer p-scrolldown">
+				<div id="muteButton">
+				<a class="down btn">
+					
+					<span>spacebar to toggle music</span>
+					
+				</a>
+			</div>
+			</footer>
+		</div>
+		<!-- End of home section -->
+
+		<!-- Begin of about us section -->
+		<div class="section  section-about section-cent" data-section="about-us">
+
+			<section class="content">
+				<!-- left elements -->
+				<div class="c-left">
+					<div class="">
+						<div class="c-logo home-logo ">
+							<i class="icon lnr lnr-heart anim-rotate"></i>
+						</div>
+						<div class="c-illustr">
+							<div class="img-top"></div>
+							<div class="img-middle bg-img" data-image-src="img/bg-default.jpg">
+								<div class="swipe-nav">
+									<a class="icon-left prev" ><i class="icon lnr lnr-chevron-left"></i></a>
+									<a class="icon-right next" ><i class="icon lnr lnr-chevron-right"></i></a>
+								</div>
+								<div class="slides owl-carousel">
+<!--									<div class="slide-item  bg-img" data-image-src="img/bg-foods.jpg"></div>-->
+									<div class="slide-item">
+										<img src="img/bg-sample3.jpg" alt="slide pict">
+									</div>
+									<div class="slide-item">
+										<img src="img/bg-sample4.jpg" alt="slide pict">
+									</div>
+								</div>
+							</div>
+<!--							<div class="img-bottom"></div>-->
+						</div>
+					</div>
+				</div>
+				<!-- right elements -->
+				<div class="c-right">
+					<div class="anim-slideright">
+						<header class="header">
+							<h2>Buy <strong>XCoins</strong></h2>
+							<h3>We make great things with XCoins. How is that possible ?</h3>
+						</header>
+						<article class="desc">
+							<p>This in-game currency <strong>XCOINS </strong>can be used to purchase a car, skins and a lot more xCoin related products through the in-game store of Paradox V3.</p>
+							<p>xCoins can be brought through Paypal. if you request another payment method, please contact our support team. </p>
+							<p><div class="btns">
+								<a class="btn" href="http://discord.paradoxrp.com" target="_blank">Buy XCoins</a>&nbsp;&nbsp;&nbsp;<a class="btn" href="http://discord.paradoxrp.com" target="_blank">Join our Discord</a>
+							</div></p>
+						</article>
+						<!--<div class="btns">
+							<a class="btn" href="#register">Regiter</a>
+						</div>-->
+					</div>
+				</div>
+			</section>
+
+			<!-- Arrows scroll down/up -->
+			<footer class="s-footer p-scrolldown">
+				<a class="down btn" href="#register">
+					<span>Get your XCoins now!</span>
+				</a>
+			</footer>
+		</div>
+		<!-- End of about us section -->
+
+		
+
+		<!-- Begin of Contact section   -->
+		<div class="section section-contact section-cent" data-section="contact">
+			<section class="content">
+				<!-- left elements -->
+				<div class="c-left">
+					<div class="">
+						<div class="c-logo home-logo ">
+							<i class="icon lnr lnr-diamond anim-zoomin"></i>
+						</div>
+						<div class="c-illustr">
+							<div class="img-middle bg-img" data-image-src="img/wewew.jpg">
+								<div class="tiles-left">
+									<h4>Find us on</h4>
+									<!-- Begin of Social links -->
+									<ul class="socialnet">
+										<li>
+											<a href="https://www.facebook.com/paradoxrpph/" target="_blank"><i class="ion ion-social-facebook"></i>
+													<span class="title">Facebook</span>
+												</a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/paradox_rp_philippines/" target="_blank"><i class="ion ion-social-instagram"></i>
+													<span class="title">Instagram</span>
+												</a>
+										</li>
+										<li>
+											<a href="https://twitter.com/V3Paradox" target="_blank"><i class="ion ion-social-twitter"></i>
+													<span class="title">Twitter</span>
+												</a>
+										</li>
+										<li>
+											<a href="https://discord.gg/5KtvBtw" target="_blank" ><i class="ion ion-android-chat"></i>
+													<span class="title">Discord</span>
+												</a>
+										</li>
+										
+									</ul>
+									<!-- End of Social links -->
+								</div>
+							</div>
+							<!--<div class="img-bottom"></div>-->
+						</div>
+					</div>
+				</div>
+				<!-- right elements -->
+				<div class="c-right c-contact">
+					<div class="anim-slideright">
+						<header class="header">
+							<h2><strong>Game</strong> Rules</h2>
+							<h3><span>Take time to read the basics</span></h3> 
+						</header>
+						<article class="desc">
+							<ul>
+								<li>
+									<div class="title">
+										<i class="icon lnr lnr-map"></i>
+										<span class="readable">Address</span>
+									</div>
+									<div class="data">No RDM</div>
+								</li>
+								<li>
+									<div class="title">
+										<i class="icon lnr lnr-map"></i>
+										<span class="readable">Address</span>
+									</div>
+									<div class="data">NO VDM</div>
+								</li>
+								<li>
+									<div class="title">
+										<i class="icon lnr lnr-map"></i>
+										<span class="readable">Address</span>
+									</div>
+									<div class="data">No Harassment</div>
+								</li>
+								<li>
+									<div class="title">
+										<i class="icon lnr lnr-map"></i>
+										<span class="readable">Address</span>
+									</div>
+									<div class="data">Respect Everyone (Disrespectful, Sexual, Etc)</div>
+								</li>
+								<li>
+									<div class="title">
+										<i class="icon lnr lnr-map"></i>
+										<span class="readable">Address</span>
+									</div>
+									<div class="data">Tamang RP Lang, Wag Kang Kupal</div>
+								</li>
+							</ul>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Arrows scroll down/up -->
+			
+
+		</div>
+		<!-- End of Contact section  -->
+
+		
+			
+
+			<!-- Arrows scroll down/up -->
+		</div>
+		<!-- End of Message section -->
+
+	</main>
+
+	<!-- END OF site main content content here -->
+	
+	
+	<!-- BEGIN OF site footer -->
+	<footer class="site-footer">
+		<div class="note">
+			<p>&copy; Copyright Nefarious 2021</p>
+		</div>
+	</footer>
+	<!-- END OF site footer -->
+	<audio id="leson" src="music/music.ogg" autoplay="true" hidden="true" loop="true"/>
+
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	 -->
+	 <script  src="https://code.jquery.com/jquery-3.5.1.min.js"
+	 integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+	 crossorigin="anonymous"></script>
+	<script>
+		// var _url = 'http://51.79.162.13:30120/players.json';
+	$(function(){url:'http://51.79.162.144:21937/status.php',
+	
+		setInterval(function(){ 
+			var _url ='http://51.79.162.144:21937/players.json';
+			$.ajax({
+				method:"GET",
+				url : _url,
+				success:function(response){
+					let count = JSON.parse(response).length;
+					document.getElementById('onlines').innerHTML = count;
+					console.log(count);
+				}
+			});
+		}, 5000);
+		
+	});
+
+
+	</script>
+
+<script>
+
+    var play = false;
+    var myAudio = document.getElementById("leson");
+    
+    myAudio.volume = 0.3;
+
+    function onKeyDown(event) {
+            switch (event.keyCode) {
+                case 32: //SpaceBar                    
+                    if (play) {
+                        myAudio.pause();
+                        play = false;
+                    } else {
+                        myAudio.play();
+                        play = true;
+                    }
+                    break;
+            }
+      return false;
+    }
+
+    window.addEventListener("keydown", onKeyDown, false);
+    </script>
+	<!-- All Javascript plugins goes here -->
+	<!--		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>-->
+	<script src="js/vendor/jquery-1.11.2.min.js"></script>
+	<!-- All vendor scripts -->
+	<script src="js/vendor/all.js"></script>
+	<script src="js/particlejs/particles.min.js"></script>
+	<!-- Uncomment below to enable particles scripts -->
+	<!--<script src="./js/particlejs/particles-init.js"></script>-->
+
+	<!-- Detailed vendor scripts -->
+	<!--<script src="./js/vendor/jquery.fullPage.min.js"></script>
+        <script src="./js/vendor/jquery.slimscroll.min.js"></script>
+        <script src="./js/vendor/jquery.knob.min.js"></script>
+        <script src="./js/vegas/vegas.min.js"></script>
+        <script src="./js/vendor/jquery.maximage.js"></script>
+        <script src="./js/vendor/okvideo.min.js"></script>
+		<script src="./js/owl-carousel/owl.carousel.js"></script>-->
+
+	<!-- Countdown script -->
+	<script>
+		
+	</script>
+	<script src="js/jquery.downCount.js"></script>
+	
+	<!-- Form script -->
+	<script src="js/form_script.js"></script>
+
+	<!-- Javascript main files -->
+	<script src="js/main.js"></script>
+	<script src="./renderer.js"></script>
+	
+	<!-- Google Analytics: Uncomment and change UA-XXXXX-X to be your site"s ID. -->
+	<!--<script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src="//www.google-analytics.com/analytics.js";
+            r.parentNode.insertBefore(e,r)}(window,document,"script","ga"));
+            ga("create","UA-XXXXX-X");ga("send","pageview");
+        </script>-->
+</body>
+
+
+
+</html>
